@@ -11,6 +11,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 
 
 
@@ -19,16 +22,25 @@
 
 	<body>
 		<nav class="navbar">
+			<a href="#" class="toggle-button">
+
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+
+
+			</a>
+
 			<ul class="top-list">
-				
+
 					<li class="top-item">
 						<a href="#home">Home</a>
 					</li>
 					<li class="top-item">
 						<a href="#about">About us</a>
 					</li>
-					<li class="top-item">
-						<a href="#pizza">Pizza</a>
+					<li class="top-item" >
+						<a href="#pizza" class="pizza1">Pizza</a>
 					</li>
 					
 					<li class="top-item">
@@ -39,10 +51,10 @@
 					<li class="top-item-login">
 						<a href="#login">Login</a>
 					</li>
-					<li class="top-item-login1">
+					<li class="top-item">
 						<a href="#register">Register</a>
 					</li>
-				
+
 			</ul>
 		</nav>
 	
@@ -55,160 +67,13 @@
 			</h1>
 		</div>
 		<div class="container-pizza">
-			<h2 id="title-pizza">Pizza</h2>
-				<div class="pizza-holder">
-					<div class="pizza">
-						<img src="images/4.jpg" style="width: 40vh; height: 30vh ">
-						<h3>Margherita </h3>
-						<form>
-							<input class="pizza-type" name="pizza" type="radio" id="32cm" value="32margherita">
-								<label for="32cm">Price: 20 lei ( 32 cm)</label>
-									<br>
-								<input class="pizza-type" name="pizza" type="radio" id="40cm" value="40marherita">
-									<label for="40cm">Price: 38 lei ( 40 cm)</label>
-							
-								</input>
-								<br>
-						
-							<button class="add-product" type="submit">Add to cart</button>		
-						</form>	
-					</div>
-					<div class="pizza">
-						<img src="images/3.jpg" style="width: 40vh; height: 30vh ">
-						<h3>Salami </h3>
-						<form>
-							<input class="pizza-type" name="pizza" type="radio" id="32cm2" value="32margherita">
-								<label for="32cm2">Price: 22 lei ( 32 cm)</label>
-									<br>
-								<input class="pizza-type" name="pizza" type="radio" id="40cm2" value="40marherita">
-									<label for="40cm2">Price: 40 lei ( 40 cm)</label>
-							
-								</input>
-								<br>
-						
-							<button class="add-product" type="submit">Add to cart</button>		
-						</form>	
-					</div>
-					<div class="pizza">
-						<img src="images/2.jpg" style="width: 40vh; height: 30vh ">
-						<h3>Salmon </h3>
-						<form>
-							<input class="pizza-type" name="pizza" type="radio" id="32cm3" value="32salmon">
-								<label for="32cm3">Price: 23 lei ( 32 cm)</label>
-									<br>
-								<input class="pizza-type" name="pizza" type="radio" id="40cm3" value="40salmon">
-									<label for="40cm3">Price: 41 lei ( 40 cm)</label>
-							
-								</input>
-								<br>
-						
-							<button class="add-product" type="submit">Add to cart</button>		
-						</form>	
-					</div>
-					<div class="pizza">
-						<img src="images/5.jpg" style="width: 40vh; height: 30vh ">
-						<h3>Con Tutto </h3>
-						<form>
-							<input class="pizza-type" name="pizza" type="radio" id="32cm4" value="32contutto">
-								<label for="32cm4">Price: 22 lei ( 32 cm)</label>
-									<br>
-								<input class="pizza-type" name="pizza" type="radio" id="40cm4" value="40contutto">
-									<label for="40cm4">Price: 40 lei ( 40 cm)</label>
-							
-								</input>
-								<br>
-						
-							<button class="add-product" type="submit">Add to cart</button>		
-						</form>	
-					</div>
-					<div class="pizza">
-						<img src="images/6.jpg" style="width: 40vh; height: 30vh ">
-						<h3>Vegetarian </h3>
-						<form>
-							<input class="pizza-type" name="pizza" type="radio" id="32cm5" value="32vegetarian">
-								<label for="32cm5">Price: 21 lei ( 32 cm)</label>
-									<br>
-								<input class="pizza-type" name="pizza" type="radio" id="40cm5" value="40vegetarian">
-									<label for="40cm5">Price: 39 lei ( 40 cm)</label>
-							
-								</input>
-								<br>
-						
-							<button class="add-product" type="submit">Add to cart</button>		
-						</form>	
-					</div>
-					<div class="pizza">
-						<img src="images/7.jpg" style="width: 40vh; height: 30vh ">
-						<h3>Prosciutto Funghi </h3>
-						<form>
-							<input class="pizza-type" name="pizza" type="radio" id="32cm6" value="32prosciuttofunghi">
-								<label for="32cm6">Price: 23 lei ( 32 cm)</label>
-									<br>
-								<input class="pizza-type" name="pizza" type="radio" id="40cm6" value="40prosciuttofunghi">
-									<label for="40cm6">Price: 41 lei ( 40 cm)</label>
-							
-								</input>
-								<br>
-						
-							<button class="add-product" type="submit">Add to cart</button>		
-						</form>	
-					</div>
-					<div class="pizza">
-						<img src="images/8.jpg" style="width: 40vh; height: 30vh ">
-						<h3>Capriciossa </h3>
-						<form>
-							<input class="pizza-type" name="pizza" type="radio" id="32cm7" value="32capriciossa">
-								<label for="32cm7">Price: 22 lei ( 32 cm)</label>
-									<br>
-								<input class="pizza-type" name="pizza" type="radio" id="40cm7" value="40capriciossa">
-									<label for="40cm7">Price: 40 lei ( 40 cm)</label>
-							
-								</input>
-								<br>
-						
-							<button class="add-product" type="submit">Add to cart</button>		
-						</form>	
-					</div>
-					<div class="pizza">
-						<img src="images/9.jpg" style="width: 40vh; height: 30vh ">
-						<h3>Quatro Staggioni </h3>
-						<form>
-							<input class="pizza-type" name="pizza" type="radio" id="32cm8" value="32quatro">
-								<label for="32cm8">Price: 21 lei ( 32 cm)</label>
-									<br>
-								<input class="pizza-type" name="pizza" type="radio" id="40cm8" value="40quatro">
-									<label for="40cm8">Price: 39 lei ( 40 cm)</label>
-							
-								</input>
-								<br>
-						
-							<button class="add-product" type="submit">Add to cart</button>		
-						</form>	
-					</div>
-					<div class="pizza">
-						<img src="images/10.jpg" style="width: 40vh; height: 30vh ">
-						<h3>Prosciutto </h3>
-						<form>
-							<input class="pizza-type" name="pizza" type="radio" id="32cm9" value="32prosciutto">
-								<label for="32cm9">Price: 23 lei ( 32 cm)</label>
-									<br>
-								<input class="pizza-type" name="pizza" type="radio" id="40cm9" value="40prosciutto">
-									<label for="40cm9">Price: 41 lei ( 40 cm)</label>
-							
-								</input>
-								<br>
-						
-							<button class="add-product" type="submit">Add to cart</button>		
-						</form>	
-					</div>
-					
-				</div>
+
 		</div>
 		
 	
 	
 
-	<script src="js/script.js"></script>
+
 
 	</body>
 
